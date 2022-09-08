@@ -39,4 +39,8 @@ require('./controllers/quiz-attempts-controller')(app)
 
 app.listen(process.env.PORT || 3000);
 
+app.get('/', function routeHandler(req, res) {
+    res.send(' This is the quiz  server......');
+});
+
 
