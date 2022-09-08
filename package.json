@@ -15,7 +15,8 @@
     "config": "^3.3.6",
     "dotenv": "^16.0.2",
     "express": "^4.17.1",
-    "express-session": "^1.17.1"
+    "express-session": "^1.17.1",
+    "body-parser": "^1.19.0"
   },
   "engines": {
     "node": "16.x"
