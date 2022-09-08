@@ -1,3 +1,7 @@
+require('dotenv').config()
+
+const MONGO_URI = `${process.env.REACT_APP_MONGO_URI}`
+
 
 const express = require('express')
 const app = express();
@@ -5,15 +9,9 @@ const app = express();
 const mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb+srv://helloshova:121212H@devconnector.oonox.mongodb.net/test?retryWrites=true&w=majority',
+mongoose.connect(MONGO_URI,
     { useNewUrlParser: true, useUnifiedTopology: true });
 
-const session = require('express-session')
-app.use(session({
-    secret: 'keyboard cat',
-    resave: false,
-    saveUninitialized: true,
-}))
 
 // configure CORS
 app.use(function (req, res, next) {
