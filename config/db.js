@@ -8,7 +8,7 @@ const config = require('config');
 const db = `${process.env.REACT_APP_MONGO_URI}`;
 const connectDB = async () => {
     try {
-        await mongoose.connect(db, {
+        await mongoose.createConnection(db, {
             useNewUrlParser: true
         });
         console.log("MongoDB connected ... !!");
