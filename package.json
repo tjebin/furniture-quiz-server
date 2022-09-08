@@ -1,24 +1,26 @@
 {
-  "name": "wbdv",
-  "description": "node server image",
+  "name": "wbdv-sp21-02-morshedmm-server-node",
+  "version": "1.0.0",
+  "description": "node server for web dev",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "tjebin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morshedmm/wbdv-sp21-02-morshedmm-server-node.git"
+  },
+  "author": "mmorshed",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morshedmm/wbdv-sp21-02-morshedmm-server-node/issues"
+  },
+  "homepage": "https://github.com/morshedmm/wbdv-sp21-02-morshedmm-server-node#readme",
   "dependencies": {
-    "mongoose": "^4.1.12",
-    "mongoose-auto-increment": "^5.0.1",
-    "mongoose-sequence": "^5.3.1",
-    "config": "^3.3.6",
-    "dotenv": "^16.0.2",
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
-    "body-parser": "^1.19.0"
-  },
-  "engines": {
-    "node": "16.x"
+    "mongoose": "^5.12.3"
   }
 }
